@@ -6,7 +6,7 @@ import java.util.Scanner;
 import org.json.JSONArray;
 import org.json.JSONObject;
     
-public class JSONObjectProcessing {
+public class JSONObjectProcessing { //CONSOLE BASED VERSION OF THE DATABASE
 public static void main(String[] args) throws Exception {
 
     Scanner scan = new Scanner(System.in);
