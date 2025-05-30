@@ -1,7 +1,6 @@
 package com.example;
 
 import java.util.ArrayList;
-import java.util.Scanner;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -43,16 +42,17 @@ public class ListUtils {
 
             if (category.equals("pokemon")) { //if the category is pokemon, talk all about it instead
                 ArrayList<String> monStuff = new ArrayList<>();
-                monStuff.add(input + " has the type(s) " + typeHelper.getTyping(input));
-                monStuff.add(input + " is weak to " + typeHelper.getTrueWeakness(input));
-                monStuff.add(input + " is resistant to " + typeHelper.getTrueResistance(input));
+                monStuff.add(input);
+                monStuff.add("type(s): " + typeHelper.getTyping(input));
+                monStuff.add("Weak to " + typeHelper.getTrueWeakness(input));
+                monStuff.add("Resistant to " + typeHelper.getTrueResistance(input));
                 ArrayList<String> immune = typeHelper.getImmunity(input);
                 if (immune.size() == 0) {
-                    monStuff.add(input + " has no immunities");
+                    monStuff.add("Has no immunities");
                 } else {
-                    monStuff.add(input + " is immune to " + immune);
+                    monStuff.add("Immune to " + immune);
                 }
-                monStuff.add(input + "'s best tera type is " + typeHelper.getTera(input));
+                monStuff.add("The best tera type is " + typeHelper.getTera(input));
                 return monStuff;
             }
 
