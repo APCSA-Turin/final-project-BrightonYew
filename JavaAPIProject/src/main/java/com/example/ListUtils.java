@@ -12,7 +12,6 @@ public class ListUtils {
         if (listOfLists == null || listOfLists.isEmpty()) {
             return result;
         }
-
         // Use the first list to get candidate elements
         for (String element : listOfLists.get(0)) {
             boolean foundInAll = true;
