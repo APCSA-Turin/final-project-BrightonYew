@@ -5,6 +5,7 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
+//https://docs.google.com/presentation/d/1QNr1TzYkOinbrHwBUq0BH_q2xNmsv92HCJaAVnZy5ys/edit?usp=sharing
 public class API {
     public static String getData(String endpoint) throws Exception {
         /*endpoint is a url (string) that you get from an API website*/
